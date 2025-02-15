@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist 1</title>
+    <link rel="stylesheet" href="../css/playlist1.css">
+</head>
+<body>
+    <header>
+        <h1>Playlist 1</h1>
+    </header>
+    <main>
+        <ul>
+            <li><a href="../songs/song1.html" class="playlist-link">Música 1</a></li>
+            <li><a href="../songs/song2.html" class="playlist-link">Música 2</a></li>
+            <li><a href="../songs/song3.html" class="playlist-link">Música 3</a></li>
+        </ul>
+        <p>Descrição da Playlist 1...</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Player de Música</p>
+    </footer>
+    <div id="fixed-player">
+        <audio id="audio-player" controls>
+            <source src="" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" value="0" max="100">
+            <span id="duration">0:00</span>
+        </div>
+        <div class="controls">
+            <button id="prev-button">&#9664;</button>
+            <button id="play-pause-button">&#9654;</button>
+            <button id="next-button">&#9654;&#9654;</button>
+        </div>
+    </div>
+    <script src="../js/playlist1.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #6200ea;
+}
+
+footer {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
