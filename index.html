@@ -10,16 +10,75 @@
 <body>
     <header>
         <img src="images/Logo.png" alt="">
-        <h1>Bem-vindo ao Player de Música</h1>
+        <h1>Bem-vindo ao 3,14 Music</h1>
     </header>
     <main>
         <section>
-            <h2>Últimas Músicas</h2>
-            <ul>
-                <li><a href="songs/song1.html">Música 1</a></li>
-                <li><a href="songs/song2.html">Música 2</a></li>
-                <li><a href="songs/song3.html">Música 3</a></li>
-            </ul>
+            <h2>Músicas</h2>
+            <div id="ondeficamasmusicas">
+                <a href="songs/song1.html">
+                    <div class="musicas">
+                        <img class="logomsc" src="images/desacelera esse passo.jpg" alt="">
+                        <h3>Desacelera Esse Passo</h3>
+                        <h5>Clayton e Romário</h5>
+                        <div class="btdiv">
+                            <h1>&#9654;</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="songs/song2.html">
+                    <div class="musicas">
+                        <img class="logomsc" src="images/quadros.png" alt="">
+                        <h3>Quadros</h3>
+                        <h5>Fiduma e Jeca</h5>
+                        <div class="btdiv">
+                            <h1>&#9654;</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="songs/song3.html">
+                    <div class="musicas">
+                        <img class="logomsc" src="images/F&S deezer.jpg" alt="">
+                        <h3>Só dá você na minha ...</h3>
+                        <h5>Fernando e Sorocaba</h5>
+                        <div class="btdiv">
+                            <h1>&#9654;</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="songs/song4.html">
+                    <div class="musicas">
+                        <img class="logomsc" src="images/volta pro meu coração.jpg" alt="">
+                        <h3>Volta pro meu coração...</h3>
+                        <h5>João carreiro</h5>
+                        <div class="btdiv">
+                            <h1>&#9654;</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="songs/song5.html">
+                    <div class="musicas">
+                        <img class="logomsc" src="images/casa branca fes.jpg" alt="">
+                        <h3>Casa Branca</h3>
+                        <h5>Fernando e Sorocaba</h5>
+                        <div class="btdiv">
+                            <h1>&#9654;</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="songs/song6.html">
+                    <div class="musicas">
+                        <img class="logomsc" src="images/como um beijo.jpg" alt="">
+                        <h3>Como um Beijo</h3>
+                        <h5>Marcos e Belutti</h5>
+                        <div class="btdiv">
+                            <h1>&#9654;</h1>
+                        </div>
+                    </div>
+                </a>
+                <div class="carousel-indicator indicator-left">&#9664;</div>
+                <div id="direitoindicador" class="carousel-indicator indicator-right">&#9654;</div>
+            </div>
         </section>
         <section>
             <h2>Playlists</h2>
@@ -37,24 +96,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Player de Música</p>
+        <p>&copy; 2025 3,14 Music</p>
     </footer>
-    <div id="fixed-player">
-        <audio id="audio-player">
-            <source src="" type="audio/mp3">
-            Seu navegador não suporta o elemento de áudio.
-        </audio>
-        <div class="progress-container">
-            <span id="current-time">0:00</span>
-            <input type="range" id="progress-bar" value="0" max="100">
-            <span id="duration">0:00</span>
-        </div>
-        <div class="controls">
-            <button id="prev-button">&#9664;</button>
-            <button id="play-pause-button">&#9654;</button>
-            <button id="next-button">&#9654;&#9654;</button>
-        </div>
-    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
