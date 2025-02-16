@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Só da você na minha vida - Fernando e Sorocaba</title>
+    <link rel="stylesheet" href="../css/song1.css">
+    <link rel="shortcut icon" href="../images/Favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../images/Logo.png" alt="">
+        </a>
+    </header>
+    <main>
+        <div class="music-player">
+            <img src="../images/volta pro meu coração.jpg" alt="Capa da Música" class="music-cover">
+            <audio id="audio-player">
+                <source src="../audio/volta pro meu coração.mp3" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+    </main>
+    <footer>
+        <div class="fotocantor">
+            <img class="cantorperfil" src="../images/joão carreiro perfil.jpg" alt="">
+        </div>
+        <div class="funcoesmusica">
+            <div class="controls">
+                <button id="prev-button">&#9664;&#9664;</button>
+                <button id="play-pause-button">&#9654;</button>
+                <button id="next-button">&#9654;&#9654;</button>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0" max="100">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        <div class="informacoesmusica">
+            <h4>Volta pro meu coração/ O que essa moça fez aqui</h4>
+            <a href="">João Carreiro</a>
+        </div>
+    </footer>
+    <script src="../js/song1.js"></script>
+</body>
+</html>
