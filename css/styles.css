@@ -1,15 +1,18 @@
+*{
+    color: rgb(0, 191, 255);
+}
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: rgb(35, 35, 35);
+    color: rgb(0, 191, 255);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
 header {
-    background-color: #6200ea;
-    color: #fff;
+    background-color: #000000;
+    color: rgb(0, 191, 255);
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -24,7 +27,7 @@ main {
 }
 
 h1, h2 {
-    color: #6200ea;
+    color: rgb(0, 191, 255);
 }
 
 ul {
@@ -37,30 +40,203 @@ li {
 }
 
 a {
-    color: #6200ea;
+    color: rgb(0, 191, 255);
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
-a:hover {
-    color: #3700b3;
-    text-decoration: underline;
-}
-
 section {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fff;
+    /* background-color: #f4f4f4; */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
 }
 
 footer {
-    background-color: #6200ea;
-    color: #fff;
+    background-color: #000000;
+    color: rgb(0, 191, 255);
     padding: 10px;
     text-align: center;
     width: 100%;
     bottom: 0;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+}
+.logomsc{
+    width: 200px;
+}
+#ondeficamasmusicas{
+    display: flex;
+    gap: 20px;
+}
+.musicas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 230px;
+    height: 240px;
+    padding-top: 60px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.musicas h3{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.musicas h5{
+    margin: -15px 0px 10px 0px;
+}
+.musicas h1, .musicas h3, .musicas h5 {
+    text-decoration: none !important;
+}
+.musicas .btdiv{
+    background-color: rgb(0, 191, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -120px;
+    left: 100px;
+    font-size: 20px;
+    line-height: 100px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    visibility: hidden;
+}
+.btdiv h1{
+    color: #fff;
+}
+.musicas:hover{
+    background-color: rgb(52, 52, 52);
+    transform: scale(1.05);
+}
+.musicas:hover .btdiv{
+    visibility: visible;
+}
+.carousel-indicator {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgba(0, 191, 255, 0.492);
+    pointer-events: none;
+    user-select: none;
+    display: none;
+}
+
+.indicator-left {
+    left: 10px;
+}
+
+.indicator-right {
+    right: -15px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        width: 100vw;
+        height: auto;
+        padding: 10px;
+    }
+    header img{
+        width: 10vw;
+    }
+    #ondeficamasmusicas {
+        gap: 10px;
+    }
+    .musicas {
+        width: 200px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    header img {
+        width: 85px;
+    }
+    header h1 {
+        margin: 5px 0 0 0;
+        font-size: 20px;
+    }
+    #ondeficamasmusicas {
+        gap: 10px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .musicas {
+        width: 180px;
+        height: 200px;
+    }
+    .musicas h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    .musicas h5{
+        font-size: 12px;
+        text-align: center;
+    }
+    .musicas .btdiv {
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .logomsc{
+        width: 150px;
+    }
+    section h2{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    header img {
+        width: 80px;
+    }
+    header h1 {
+        margin: 5px 0 0 0;
+        font-size: 20px;
+    }
+    #ondeficamasmusicas {
+        gap: 2px;
+        width: 90vw;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .musicas {
+        width: 120px;
+        height: 130px;
+    }
+    .musicas h3 {
+        font-size: 12px;
+    }
+    .musicas h5 {
+        font-size: 8px;
+        margin-top: -5px;
+    }
+    .musicas .btdiv {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }
+    .logomsc{
+        width: 100px;
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
 }
