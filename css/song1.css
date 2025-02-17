@@ -127,6 +127,9 @@ h4{
     footer {
         height: auto;
     }
+    main {
+        height: 65vh;
+    }
 }
 
 @media (max-width: 768px) {
